@@ -41,9 +41,7 @@ $(document).ready(function () {
                 }
             }, function (response) {
                 // Process the response
-                if (response.success) {
-                    downloadButton.disabled = false;
-                }
+                downloadButton.disabled = false;
             });
         });
         window.close();
