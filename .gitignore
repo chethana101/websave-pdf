@@ -1,0 +1,8 @@
+# Intellij
+.idea/*
+
+# vscode
+.vscode/*
+
+# .env
+.env

@@ -1,0 +1,32 @@
+{
+	"manifest_version": 3,
+	"name": "WebSave PDF",
+	"description": "This is a extension that can convert selected html elements to PDF format. Also can download entire webpage as PDF.",
+	"version": "1.0",
+	"action": {
+		"default_popup": "popup.html",
+		"default_title": "WebSave PDF"
+	},
+	"icons": {
+		"16": "icons/icon16-light.png",
+		"32": "icons/icon32-light.png",
+		"48": "icons/icon48-light.png",
+		"128": "icons/icon128-light.png"
+	},
+	"host_permissions": [
+		"http://*/*",
+		"https://*/*"
+	],
+	"content_scripts": [
+		{
+			"run_at": "document_start",
+			"js": [
+				"scripts/jquery.min.js",
+				"scripts/print-this.js",
+				"scripts/html2pdf.js",
+				"scripts/content.js"
+			],
+			"matches": ["http://*/*", "https://*/*"]
+		}
+	]
+}
