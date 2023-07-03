@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSave PDF</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<!-- Main Content -->
+<div class="main-content">
+    <div class="after-content">
+        <!-- Head Content -->
+        <div class="content-head">
+            <div class="content-logo-box">
+                <img class="content-logo" src="./images/logo-light.svg" alt="LOGO" width="30" height="30">
+            </div>
+            <div class="content-title-box">
+                <span class="content-title">WebSave PDF</span>
+            </div>
+        </div>
+        <!-- Body Content -->
+        <div class="content-body">
+            <div class="content-radio-box-group">
+                <div class="content-radio">
+                    <label id="entire-content">
+                        <input type="radio" name="type" checked> Entire Content
+                    </label>
+                </div>
+                <div class="content-radio">
+                    <label id="selected-element">
+                        <input type="radio" name="type"> Selected Element
+                    </label>
+                </div>
+            </div>
+            <!-- Advanced Options -->
+            <div class="content-advanced-content" id="advanced-content" style="display: none;">
+                <div class="field-box-main">
+                    <label class="field-label">Format</label>
+                    <div class="field-box">
+                        <select class="field" id="format">
+                            <option value="letter">Letter</option>
+                            <option value="government-letter">Government Letter</option>
+                            <option value="legal">Legal</option>
+                            <option value="junior-legal">Junior Legal</option>
+                            <option value="ledger">ledger</option>
+                            <option value="tabloid">Tabloid</option>
+                            <option value="credit-card">Credit Card</option>
+                            <option value="a0">A0</option>
+                            <option value="a1">A1</option>
+                            <option value="a2">A2</option>
+                            <option value="a3">A3</option>
+                            <option value="a4" selected>A4</option>
+                            <option value="a5">A5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field-box-main">
+                    <label class="field-label">Orientation</label>
+                    <div class="field-box">
+                        <select class="field" id="orientation">
+                            <option value="portrait" selected>Portrait</option>
+                            <option value="landscape">Landscape</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field-box-main">
+                    <label class="field-label">Orientation</label>
+                    <div class="field-box">
+                        <select class="field" id="margin">
+                            <option value="1" selected>Default</option>
+                            <option value="0">None</option>
+                            <option value="2">Maximum</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Content -->
+        <div class="content-footer" id="content-footer">
+            <button class="btn btn-primary" type="button" id="downloadButton">Save as PDF</button>
+            <button class="btn btn-primary" type="button" id="startSelectButton" style="display: none;">Start
+                Selecting
+            </button>
+        </div>
+    </div>
+</div>
+<!-- Scripts -->
+<script src="./scripts/jquery.min.js"></script>
+<script src="./popup.js"></script>
+</body>
+</html>
